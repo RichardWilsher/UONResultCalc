@@ -1,14 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UONResultCalc.MainController">
+    <center>
+        <AnchorPane prefHeight="468.0" prefWidth="699.0" style="-fx-background-color: LIGHTGREY;" BorderPane.alignment="CENTER">
+            <children>
+                <TabPane layoutX="27.0" layoutY="43.0" prefHeight="385.0" prefWidth="651.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="172.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="43.0">
+                    <tabs>
+                        <Tab text="2nd Year">
+                     <content>
+                        <AnchorPane prefHeight="340.0" prefWidth="751.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="346.0" prefWidth="745.0">
+                                 <children>
+                                    <TextField layoutX="14.0" layoutY="39.0" text="CSY2006" />
+                                    <TextField layoutX="14.0" layoutY="87.0" text="CSY2027" />
+                                    <TextField layoutX="14.0" layoutY="138.0" text="CSY2028" />
+                                    <TextField layoutX="14.0" layoutY="190.0" text="CSY2030" />
+                                    <TextField layoutX="14.0" layoutY="241.0" text="CSY2038" />
+                                    <TextField layoutX="14.0" layoutY="292.0" text="CSY2061" />
+                                    <TextField layoutX="187.0" layoutY="39.0" prefHeight="25.0" prefWidth="290.0" text="Software Engineering 2" />
+                                    <TextField layoutX="187.0" layoutY="87.0" prefHeight="25.0" prefWidth="290.0" text="Group Project" />
+                                    <TextField layoutX="187.0" layoutY="138.0" prefWidth="290.0" text="Web Programming" />
+                                    <TextField layoutX="187.0" layoutY="190.0" prefWidth="290.0" text="Systems Design and Development" />
+                                    <TextField layoutX="187.0" layoutY="241.0" prefWidth="290.0" text="Databases 2" />
+                                    <TextField layoutX="187.0" layoutY="292.0" prefWidth="290.0" text="Mobile Application Development 1" />
+                                    <ChoiceBox fx:id="secondYearChoiceBox1" layoutX="495.0" layoutY="39.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="secondYearChoiceBox2" layoutX="495.0" layoutY="87.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="secondYearChoiceBox3" layoutX="495.0" layoutY="138.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="secondYearChoiceBox4" layoutX="495.0" layoutY="190.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="secondYearChoiceBox5" layoutX="495.0" layoutY="241.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="secondYearChoiceBox6" layoutX="495.0" layoutY="292.0" prefWidth="150.0" />
+                                    <Label layoutX="14.0" layoutY="14.0" text="Module Code" />
+                                    <Label layoutX="187.0" layoutY="14.0" text="Module Title" />
+                                    <Label layoutX="499.0" layoutY="14.0" text="Grade" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+                        <Tab text="3rd Year">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="361.0" prefWidth="753.0">
+                                 <children>
+                                    <TextField layoutX="19.0" layoutY="46.0" text="CSY3010" />
+                                    <TextField layoutX="188.0" layoutY="46.0" prefWidth="290.0" text="Media Technology" />
+                                    <TextField layoutX="19.0" layoutY="93.0" text="CSY3013" />
+                                    <TextField layoutX="188.0" layoutY="93.0" prefWidth="290.0" text="Software Engineering 3" />
+                                    <TextField layoutX="19.0" layoutY="143.0" text="CSY3024" />
+                                    <TextField layoutX="188.0" layoutY="143.0" prefWidth="290.0" text="Databases 3" />
+                                    <TextField layoutX="19.0" layoutY="194.0" text="CSY3025" />
+                                    <TextField layoutX="188.0" layoutY="194.0" prefWidth="290.0" text="Artificial Intelligence Techniques" />
+                                    <TextField layoutX="19.0" layoutY="244.0" text="CSY4010" />
+                                    <TextField layoutX="188.0" layoutY="244.0" prefWidth="290.0" text="Dissertation" />
+                                    <ChoiceBox fx:id="thirdYearChoiceBox1" layoutX="486.0" layoutY="46.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="thirdYearChoiceBox2" layoutX="486.0" layoutY="93.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="thirdYearChoiceBox3" layoutX="486.0" layoutY="143.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="thirdYearChoiceBox4" layoutX="486.0" layoutY="194.0" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="dissertationChoiceBox" layoutX="486.0" layoutY="244.0" prefWidth="150.0" />
+                                    <Label layoutX="19.0" layoutY="20.0" text="Module Code" />
+                                    <Label layoutX="188.0" layoutY="20.0" text="Module Title" />
+                                    <Label layoutX="486.0" layoutY="20.0" text="Grade" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+                    </tabs>
+                </TabPane>
+                <Button fx:id="calculateButton" defaultButton="true" layoutX="495.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleCalculateButtonAction" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #aaaaaa;" text="Calculate" />
+            <Label layoutX="34.0" layoutY="25.0" prefHeight="39.0" prefWidth="283.0" text="UON Results Calculator">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            </children>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
+        </AnchorPane>
+    </center>
+</BorderPane>
