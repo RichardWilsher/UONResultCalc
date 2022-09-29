@@ -87,6 +87,9 @@ public class Module{
             case "G":
                 value = 0;
                 break;
+            default:
+                value =0;
+                break;
         }
 
         return value;

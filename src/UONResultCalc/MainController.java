@@ -22,20 +22,22 @@ import java.util.*;
 
 public class MainController implements Initializable {
 
-    @FXML private ChoiceBox secondYearChoiceBox1;
-    @FXML private ChoiceBox secondYearChoiceBox2;
-    @FXML private ChoiceBox secondYearChoiceBox3;
-    @FXML private ChoiceBox secondYearChoiceBox4;
-    @FXML private ChoiceBox secondYearChoiceBox5;
-    @FXML private ChoiceBox secondYearChoiceBox6;
-    @FXML private ChoiceBox thirdYearChoiceBox1;
-    @FXML private ChoiceBox thirdYearChoiceBox2;
-    @FXML private ChoiceBox thirdYearChoiceBox3;
-    @FXML private ChoiceBox thirdYearChoiceBox4;
-    @FXML private ChoiceBox dissertationChoiceBox;
+    @FXML private ChoiceBox<String> secondYearChoiceBox1;
+    @FXML private ChoiceBox<String> secondYearChoiceBox2;
+    @FXML private ChoiceBox<String> secondYearChoiceBox3;
+    @FXML private ChoiceBox<String> secondYearChoiceBox4;
+    @FXML private ChoiceBox<String> secondYearChoiceBox5;
+    @FXML private ChoiceBox<String> secondYearChoiceBox6;
+    @FXML private ChoiceBox<String> thirdYearChoiceBox1;
+    @FXML private ChoiceBox<String> thirdYearChoiceBox2;
+    @FXML private ChoiceBox<String> thirdYearChoiceBox3;
+    @FXML private ChoiceBox<String> thirdYearChoiceBox4;
+    @FXML private ChoiceBox<String> dissertationChoiceBox;
 
     public MainController() throws Exception {
+    /*
 
+    */
     }
 
     @FXML
@@ -43,26 +45,26 @@ public class MainController implements Initializable {
 
         double[] secondYear = new double[6];
         double[] thirdYear = new double[4];
-        double dissertation = 0.0;
+        double dissertation;
 
         // Set up the arrays to store the grades into
         Module[] secondYearModule = new Module[6];
         Module[] thirdYearModule = new Module[4];
 
         //read in the grades
-        secondYearModule[0] = new Module(secondYearChoiceBox1.getValue().toString());
-        secondYearModule[1] = new Module(secondYearChoiceBox2.getValue().toString());
-        secondYearModule[2] = new Module(secondYearChoiceBox3.getValue().toString());
-        secondYearModule[3] = new Module(secondYearChoiceBox4.getValue().toString());
-        secondYearModule[4] = new Module(secondYearChoiceBox5.getValue().toString());
-        secondYearModule[5] = new Module(secondYearChoiceBox6.getValue().toString());
+        secondYearModule[0] = new Module(secondYearChoiceBox1.getValue());
+        secondYearModule[1] = new Module(secondYearChoiceBox2.getValue());
+        secondYearModule[2] = new Module(secondYearChoiceBox3.getValue());
+        secondYearModule[3] = new Module(secondYearChoiceBox4.getValue());
+        secondYearModule[4] = new Module(secondYearChoiceBox5.getValue());
+        secondYearModule[5] = new Module(secondYearChoiceBox6.getValue());
 
-        thirdYearModule[0] = new Module(thirdYearChoiceBox1.getValue().toString());
-        thirdYearModule[1] = new Module(thirdYearChoiceBox2.getValue().toString());
-        thirdYearModule[2] = new Module(thirdYearChoiceBox3.getValue().toString());
-        thirdYearModule[3]= new Module(thirdYearChoiceBox4.getValue().toString());
+        thirdYearModule[0] = new Module(thirdYearChoiceBox1.getValue());
+        thirdYearModule[1] = new Module(thirdYearChoiceBox2.getValue());
+        thirdYearModule[2] = new Module(thirdYearChoiceBox3.getValue());
+        thirdYearModule[3]= new Module(thirdYearChoiceBox4.getValue());
 
-        Module dissertationModule = new Module(dissertationChoiceBox.getValue().toString());
+        Module dissertationModule = new Module(dissertationChoiceBox.getValue());
 
         //Convert the letter grades to the numeric values for calculation
         for (int i=0; i<6; i++) {

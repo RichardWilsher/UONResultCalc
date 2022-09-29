@@ -149,7 +149,7 @@ public class Result {
         double[] sortedSecondYear = sortGrades(secondYear);
         double[] sortedThirdYear = sortGrades(thirdYear);
 
-        double[] resultArray = new double[15];
+        double[] resultArray;
         resultArray = dropResults(sortedSecondYear, sortedThirdYear);
 
         double[] sortedResultArray = sortGrades(resultArray);
